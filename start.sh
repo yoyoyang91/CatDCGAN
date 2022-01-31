@@ -1,12 +1,3 @@
-## This script was taken from Alexia Jolicoeur Martineau's work https://ajolicoeur.wordpress.com/cats/
-## I modified some elements such as the link to download the dataset.
-
-## Download CAT dataset
-# wget -nc http://www.simoninithomas.com/data/cats.zip
-
-## Setting up folder
-unzip cats-dataset.zip -d cat_dataset
-unzip cats.zip
 mv cat_dataset/CAT_00/* cat_dataset
 rmdir cat_dataset/CAT_00
 mv cat_dataset/CAT_01/* cat_dataset
@@ -40,7 +31,3 @@ python preprocess_cat_dataset.py
 
 ## Removing cat_dataset
 rm -r cat_dataset
-
-## Move to your favorite place
-#mv cats_bigger_than_64x64 /home/alexia/Datasets/Meow_64x64
-#mv cats_bigger_than_128x128 /home/alexia/Datasets/Meow_128x128
